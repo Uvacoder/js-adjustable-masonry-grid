@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-1 { width: calc(100% - 20px); }
+.column-2 { width: calc(50% - 20px); }
+.column-3 { width: calc(33% - 20px); }
+.column-4 { width: calc(25% - 20px); }
+
+.column-margin {
+  margin: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #ccc, #eee);
+}
