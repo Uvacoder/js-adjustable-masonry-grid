@@ -7,8 +7,10 @@ import {
   getRandomHeight
 } from './utils.js';
 
-const cards = Array(24).fill().map((_, i) => ({
-  id: i + 1,
+const totalElements = 48;
+
+const cards = Array(totalElements).fill().map((_, index) => ({
+  id: index + 1,
   height: getRandomHeight(50, 250)
 }));
 
@@ -28,7 +30,7 @@ const renderGrid = (colSize) => {
   });
 }
 
-const resize = () => {
+const setColumnSize = () => {
   const windowWidth = getWindowSize().width;
   if (windowWidth < 600) {
     currentColSize = 1;
@@ -43,6 +45,6 @@ const resize = () => {
   prevColSize = currentColSize;
 }
 
-window.addEventListener('resize', resize);
+window.addEventListener('resize', setColumnSize);
 
-resize();
+setColumnSize();
