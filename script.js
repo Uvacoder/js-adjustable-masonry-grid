@@ -4,14 +4,14 @@ import {
   createCard,
   createColumn,
   getWindowSize,
-  getRandomHeight
+  getRandomNum
 } from './utils.js';
 
 const totalElements = 48;
 
 const cards = Array(totalElements).fill().map((_, index) => ({
   id: index + 1,
-  height: getRandomHeight(50, 250)
+  height: getRandomNum(50, 250)
 }));
 
 let currentColSize, prevColSize;

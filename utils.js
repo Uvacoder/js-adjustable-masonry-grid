@@ -30,4 +30,4 @@ export const getWindowSize = () => {
   }
 }
 
-export const getRandomHeight = (min, max) => (Math.random() * (max - min) + min);
+export const getRandomNum = (min, max) => (Math.random() * (max - min) + min);
